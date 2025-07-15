@@ -9,12 +9,14 @@ ul {
     display: flex;
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 
 a {
     text-decoration: none;
-    color:#F9FAF8
+    color:#E5E7EB;
+    font-size: 20px;
 }
 
 header {
@@ -26,9 +28,45 @@ header {
     margin: 0;
 }
 
+h1 , h2 , h3 , h4 {
+    margin: 12px 0px;
+}
+
+.container {
+    max-width: 1408px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0 32px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.header-top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 84px;
+}
+
+.header-logo {
+    font-size: 32px;
+
+}
+
+.top-row-right {
+    gap: 20px;
+}
+
+.header-bottom-row {
+    display: flex;
+}
+
 .header-main {
     display: flex;
-    margin: 64px 0;
+    gap: 32px;
+    margin: 144px 0;
+    justify-content: space-around;
 }
 
 .header-main-left {
@@ -36,6 +74,32 @@ header {
     flex-direction: column;
     flex: 1;
     align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.header-main-left h1{
+   text-align: left;
+   font-size: 60px;
+   line-height: 60px;
+}
+
+.header-main-left p {
+    margin-top: 0;
+    margin-bottom: 18px;
+    font-size: 24px;
+    font-weight: 300;
+    color: #E5E7EB;
+}
+
+.signup-button {
+    border: none;
+    border-radius: 12px;
+    width: 180px;
+    height: 52px;
+    color: #F9FAF8;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #3882F6;
 }
 
 .header-main-right {
@@ -50,27 +114,59 @@ header {
     min-width: 100%;
     min-height: 100%;
     display: block;
-}   
+}
 
-.container {
-    max-width: 1000px;
+#body-h2 {
+    text-align: center;
+    margin : 60px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.body-cards {
+    align-self: center;
     display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    padding: 0 32px;
-    width: 100%;
+    gap: 52px;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    margin-bottom: 64px;
+    color:#1F2937;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
 }
 
-.header-top-row {
+.card p {
+    margin-top: 8px;
+}
+
+.card-image {
+    width:95%;
+    border-radius: 20px;
+    aspect-ratio: 1/1;
+    border: 6px solid #3882F6;
+}
+
+.quote {
     display: flex;
-    justify-content: space-between;
+    padding: 96px 0 64px 0;
+    background-color: #E5E7EB;
 }
 
-.top-row-right {
-    gap: 12px;
+.quote-wrapper {
+    justify-self: center;
+    align-self: center;
+    max-width: 80%;
 }
 
-.header-bottom-row {
-    display: flex;
+.quote .text {
+    text-align: left;
+    font-style: italic;
+    font-size: 36px;
+    margin-bottom: 0;
 }
 
+#thor {
+    text-align: right;
+}
